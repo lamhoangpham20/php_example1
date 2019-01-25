@@ -1,4 +1,14 @@
 <?php include "menu.php"?>
+<?php 
+session_start();
+if (isset($_SESSION['logged_in'])&& $_SESSION['logged_in'] == true)
+{
+    echo '<b>'.$_SESSION['username'].'</b>';
+}
+else{
+    echo '<b>Quest</b>';
+}
+?>
     <h1> Assosiative array</h1>
     <?php
     $students=array(
