@@ -1,7 +1,7 @@
 <?php include "menu.php"?>
 <?php 
 session_start();
-if (isset($_SESSION['logged_in'])&& $_SESSION['logged_in'] == true)
+if (isset($_SESSION['logged_in']))
 {
     echo '<b>'.$_SESSION['username'].'</b>';
 }
